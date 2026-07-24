@@ -98,9 +98,6 @@ export function MobileMenu({
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
                 onClick={() => setOpen(false)}
-                style={{
-                  transitionDelay: open ? `${i * 60 + 80}ms` : "0ms",
-                }}
                 className={cn(
                   "group flex items-center justify-between border-b border-(--color-gray-100) py-5 font-sans text-[1.5rem] font-medium text-(--color-white) transition-[transform,opacity,color] duration-(--duration-base) ease-(--ease-out-quart) hover:text-(--color-purple-40)",
                   open
@@ -134,9 +131,6 @@ export function MobileMenu({
             target={ctaExternal ? "_blank" : undefined}
             rel={ctaExternal ? "noopener noreferrer" : undefined}
             onClick={() => setOpen(false)}
-            style={{
-              transitionDelay: open ? `${items.length * 60 + 80}ms` : "0ms",
-            }}
             className={cn(
               "group mt-8 inline-flex h-14 items-center justify-center gap-2 rounded-sm bg-(--color-purple-60) px-6 font-sans text-body font-medium text-(--color-white) transition-[transform,opacity,background-color] duration-(--duration-base) ease-(--ease-out-quart) hover:bg-(--color-purple-70)",
               open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0",
